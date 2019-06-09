@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041E73E3C944AC5C633C6FD12FEE1BCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1F9949C54D577E11BA5C1324164EA98A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2D72EB00E38F87E638FE8711BAB394DC /* Pods-RBHttpClient_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DA7B493473EDCAB52253EA58D41EA4 /* Pods-RBHttpClient_Example-dummy.m */; };
+		62D40C26FDAD4E35C789ED726451867F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		66EAC81882C43B4EEAA9FD1DCE0E6267 /* Pods-RBHttpClient_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6B8BFA129360299D941313FCF985E40 /* Pods-RBHttpClient_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A498FE4782B8F71ABA3D6CA730F9084 /* RBHttpClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E605AC578744229864F075F955E018D /* RBHttpClient-dummy.m */; };
+		E1E3F10522ACB5E8004892B6 /* RBCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F0FA22ACB5E7004892B6 /* RBCommon.h */; };
+		E1E3F10622ACB5E8004892B6 /* RBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3F0FB22ACB5E7004892B6 /* RBCommon.m */; };
+		E1E3F10722ACB5E8004892B6 /* RBRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F0FC22ACB5E7004892B6 /* RBRequestManager.h */; };
+		E1E3F10822ACB5E8004892B6 /* RBImageCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3F0FD22ACB5E7004892B6 /* RBImageCompress.m */; };
+		E1E3F10922ACB5E8004892B6 /* RBResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F0FE22ACB5E7004892B6 /* RBResponse.h */; };
+		E1E3F10A22ACB5E8004892B6 /* UIViewController+HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3F0FF22ACB5E7004892B6 /* UIViewController+HTTPRequest.m */; };
+		E1E3F10B22ACB5E8004892B6 /* RBImageCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F10022ACB5E7004892B6 /* RBImageCompress.h */; };
+		E1E3F10C22ACB5E8004892B6 /* UIViewController_RequestException.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F10122ACB5E8004892B6 /* UIViewController_RequestException.h */; };
+		E1E3F10D22ACB5E8004892B6 /* RBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3F10222ACB5E8004892B6 /* RBRequestManager.m */; };
+		E1E3F10E22ACB5E8004892B6 /* UIViewController+HTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F10322ACB5E8004892B6 /* UIViewController+HTTPRequest.h */; };
+		E1E3F10F22ACB5E8004892B6 /* RBResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3F10422ACB5E8004892B6 /* RBResponse.m */; };
+		F20F5D8A8B7BBA8DD0952AC95B11FDDB /* RBHttpClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69BDE5785CBD86608DBF2D5B3D33DC9A /* RBHttpClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F40B472840AF4021D791A4C4F10F4822 /* Pods-RBHttpClient_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C03439A4C2EBA611CEA5F92D877A482 /* Pods-RBHttpClient_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F819F163900E038CC9B5E29AF0BCA6D9 /* Pods-RBHttpClient_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FCFFBCED88041A582079278FBE0F0C /* Pods-RBHttpClient_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4043B4B71DD4F1D640C763D848D48912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACD8DFFD29B13B461D1C3532300C008B;
+			remoteInfo = RBHttpClient;
+		};
+		6574E077D5325D01181D3C7C71371197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 294446812B9C003F8C1E28F5A269FB71;
+			remoteInfo = "Pods-RBHttpClient_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		192F2D2CE0957E2A60CC62DCA55A9E48 /* RBHttpClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RBHttpClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2066A38D281FDF8140FE27EC429954BE /* RBHttpClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBHttpClient-prefix.pch"; sourceTree = "<group>"; };
+		28FCFFBCED88041A582079278FBE0F0C /* Pods-RBHttpClient_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBHttpClient_Tests-dummy.m"; sourceTree = "<group>"; };
+		2DB07419A12FF5E38842E66BAA955666 /* RBHttpClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RBHttpClient.xcconfig; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		328BE6BA228FB44DAE69DD62A3D5E187 /* Pods-RBHttpClient_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBHttpClient_Example-Info.plist"; sourceTree = "<group>"; };
+		399A300656ACCFA81453B76B2B9EB846 /* Pods-RBHttpClient_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBHttpClient_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		69BDE5785CBD86608DBF2D5B3D33DC9A /* RBHttpClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBHttpClient-umbrella.h"; sourceTree = "<group>"; };
+		6A8D7FCA76F2FD6A8CED2386A38C916B /* Pods_RBHttpClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBHttpClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C68C9C798A8887815F375B3EE56353 /* Pods-RBHttpClient_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBHttpClient_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		82EA4D10C6AA84DD6D1316D3CDC614E0 /* Pods-RBHttpClient_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RBHttpClient_Tests.modulemap"; sourceTree = "<group>"; };
+		87DA7B493473EDCAB52253EA58D41EA4 /* Pods-RBHttpClient_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBHttpClient_Example-dummy.m"; sourceTree = "<group>"; };
+		8B4ACCCCED8737D9AF6D225B4F22B746 /* Pods_RBHttpClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBHttpClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C03439A4C2EBA611CEA5F92D877A482 /* Pods-RBHttpClient_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBHttpClient_Example-umbrella.h"; sourceTree = "<group>"; };
+		9D0749CA44A3612B66AA1F8DD1D31489 /* Pods-RBHttpClient_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RBHttpClient_Example.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E10B9E99FC2940AD0A9289E881A94D1 /* Pods-RBHttpClient_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBHttpClient_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9E605AC578744229864F075F955E018D /* RBHttpClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RBHttpClient-dummy.m"; sourceTree = "<group>"; };
+		A1FC138F1B8ADF2152A849018522625B /* RBHttpClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RBHttpClient-Info.plist"; sourceTree = "<group>"; };
+		A2BC480955EB874FC88B72B86B31FB94 /* Pods-RBHttpClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBHttpClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A6B8BFA129360299D941313FCF985E40 /* Pods-RBHttpClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBHttpClient_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B01FA9D1CF3B4E4A276AD7F3D59389CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B1D39A41B49DB33E36FCE7E91CAEF04D /* RBHttpClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RBHttpClient.modulemap; sourceTree = "<group>"; };
+		C44873A994266FB59A516B3244495475 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CA7885704D1263A31D0C31F051328048 /* RBHttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBHttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB74B97574D6DC7B94596DC82193A01E /* Pods-RBHttpClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBHttpClient_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E1E3F0FA22ACB5E7004892B6 /* RBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBCommon.h; path = RBHttpClient/Classes/RBCommon.h; sourceTree = "<group>"; };
+		E1E3F0FB22ACB5E7004892B6 /* RBCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBCommon.m; path = RBHttpClient/Classes/RBCommon.m; sourceTree = "<group>"; };
+		E1E3F0FC22ACB5E7004892B6 /* RBRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBRequestManager.h; path = RBHttpClient/Classes/RBRequestManager.h; sourceTree = "<group>"; };
+		E1E3F0FD22ACB5E7004892B6 /* RBImageCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBImageCompress.m; path = RBHttpClient/Classes/RBImageCompress.m; sourceTree = "<group>"; };
+		E1E3F0FE22ACB5E7004892B6 /* RBResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBResponse.h; path = RBHttpClient/Classes/RBResponse.h; sourceTree = "<group>"; };
+		E1E3F0FF22ACB5E7004892B6 /* UIViewController+HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HTTPRequest.m"; path = "RBHttpClient/Classes/UIViewController+HTTPRequest.m"; sourceTree = "<group>"; };
+		E1E3F10022ACB5E7004892B6 /* RBImageCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBImageCompress.h; path = RBHttpClient/Classes/RBImageCompress.h; sourceTree = "<group>"; };
+		E1E3F10122ACB5E8004892B6 /* UIViewController_RequestException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewController_RequestException.h; path = RBHttpClient/Classes/UIViewController_RequestException.h; sourceTree = "<group>"; };
+		E1E3F10222ACB5E8004892B6 /* RBRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBRequestManager.m; path = RBHttpClient/Classes/RBRequestManager.m; sourceTree = "<group>"; };
+		E1E3F10322ACB5E8004892B6 /* UIViewController+HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HTTPRequest.h"; path = "RBHttpClient/Classes/UIViewController+HTTPRequest.h"; sourceTree = "<group>"; };
+		E1E3F10422ACB5E8004892B6 /* RBResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBResponse.m; path = RBHttpClient/Classes/RBResponse.m; sourceTree = "<group>"; };
+		E201664FF09E0101A348AD974CE4F8F0 /* Pods-RBHttpClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBHttpClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E88FE999784EF154E35B32034F13AA28 /* Pods-RBHttpClient_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBHttpClient_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EFAC6A95CCC0BFD28CD4AF143BC1F073 /* Pods-RBHttpClient_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBHttpClient_Tests-Info.plist"; sourceTree = "<group>"; };
+		F4952A0E90CC60A6DBBEF350DAA0326A /* Pods-RBHttpClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBHttpClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F978ABB78D4046592194528E78AC20 /* Pods-RBHttpClient_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBHttpClient_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0963938F415FC71BCCEBBF22ED79F33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9949C54D577E11BA5C1324164EA98A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA820F73CDE81BBF0596A28424B28F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D40C26FDAD4E35C789ED726451867F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A0F80A953F9F26FB2B1CE845363C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041E73E3C944AC5C633C6FD12FEE1BCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31D4F5BDC6C2011A00FD391748AA7C07 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1D39A41B49DB33E36FCE7E91CAEF04D /* RBHttpClient.modulemap */,
+				2DB07419A12FF5E38842E66BAA955666 /* RBHttpClient.xcconfig */,
+				9E605AC578744229864F075F955E018D /* RBHttpClient-dummy.m */,
+				A1FC138F1B8ADF2152A849018522625B /* RBHttpClient-Info.plist */,
+				2066A38D281FDF8140FE27EC429954BE /* RBHttpClient-prefix.pch */,
+				69BDE5785CBD86608DBF2D5B3D33DC9A /* RBHttpClient-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RBHttpClient";
+			sourceTree = "<group>";
+		};
+		326FA2E7BB7F23E90A9BEDB75F7849D9 /* Pods-RBHttpClient_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				82EA4D10C6AA84DD6D1316D3CDC614E0 /* Pods-RBHttpClient_Tests.modulemap */,
+				F7F978ABB78D4046592194528E78AC20 /* Pods-RBHttpClient_Tests-acknowledgements.markdown */,
+				E88FE999784EF154E35B32034F13AA28 /* Pods-RBHttpClient_Tests-acknowledgements.plist */,
+				28FCFFBCED88041A582079278FBE0F0C /* Pods-RBHttpClient_Tests-dummy.m */,
+				EFAC6A95CCC0BFD28CD4AF143BC1F073 /* Pods-RBHttpClient_Tests-Info.plist */,
+				A6B8BFA129360299D941313FCF985E40 /* Pods-RBHttpClient_Tests-umbrella.h */,
+				E201664FF09E0101A348AD974CE4F8F0 /* Pods-RBHttpClient_Tests.debug.xcconfig */,
+				A2BC480955EB874FC88B72B86B31FB94 /* Pods-RBHttpClient_Tests.release.xcconfig */,
+			);
+			name = "Pods-RBHttpClient_Tests";
+			path = "Target Support Files/Pods-RBHttpClient_Tests";
+			sourceTree = "<group>";
+		};
+		3DEB6A91C3B86009248A223547DAD7C8 /* Pods-RBHttpClient_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9D0749CA44A3612B66AA1F8DD1D31489 /* Pods-RBHttpClient_Example.modulemap */,
+				399A300656ACCFA81453B76B2B9EB846 /* Pods-RBHttpClient_Example-acknowledgements.markdown */,
+				70C68C9C798A8887815F375B3EE56353 /* Pods-RBHttpClient_Example-acknowledgements.plist */,
+				87DA7B493473EDCAB52253EA58D41EA4 /* Pods-RBHttpClient_Example-dummy.m */,
+				9E10B9E99FC2940AD0A9289E881A94D1 /* Pods-RBHttpClient_Example-frameworks.sh */,
+				328BE6BA228FB44DAE69DD62A3D5E187 /* Pods-RBHttpClient_Example-Info.plist */,
+				9C03439A4C2EBA611CEA5F92D877A482 /* Pods-RBHttpClient_Example-umbrella.h */,
+				F4952A0E90CC60A6DBBEF350DAA0326A /* Pods-RBHttpClient_Example.debug.xcconfig */,
+				DB74B97574D6DC7B94596DC82193A01E /* Pods-RBHttpClient_Example.release.xcconfig */,
+			);
+			name = "Pods-RBHttpClient_Example";
+			path = "Target Support Files/Pods-RBHttpClient_Example";
+			sourceTree = "<group>";
+		};
+		AC65EDC821566AA097B30055D20A0E24 /* RBHttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				E1E3F0FA22ACB5E7004892B6 /* RBCommon.h */,
+				E1E3F0FB22ACB5E7004892B6 /* RBCommon.m */,
+				E1E3F10022ACB5E7004892B6 /* RBImageCompress.h */,
+				E1E3F0FD22ACB5E7004892B6 /* RBImageCompress.m */,
+				E1E3F0FC22ACB5E7004892B6 /* RBRequestManager.h */,
+				E1E3F10222ACB5E8004892B6 /* RBRequestManager.m */,
+				E1E3F0FE22ACB5E7004892B6 /* RBResponse.h */,
+				E1E3F10422ACB5E8004892B6 /* RBResponse.m */,
+				E1E3F10122ACB5E8004892B6 /* UIViewController_RequestException.h */,
+				E1E3F10322ACB5E8004892B6 /* UIViewController+HTTPRequest.h */,
+				E1E3F0FF22ACB5E7004892B6 /* UIViewController+HTTPRequest.m */,
+				CA0989950FE11F196352556AAD26DE7A /* Pod */,
+				31D4F5BDC6C2011A00FD391748AA7C07 /* Support Files */,
+			);
+			name = RBHttpClient;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BA6D516B8842BFC7E1BE4F8862A76B92 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DEB6A91C3B86009248A223547DAD7C8 /* Pods-RBHttpClient_Example */,
+				326FA2E7BB7F23E90A9BEDB75F7849D9 /* Pods-RBHttpClient_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C8C2DD4B0221D7110253E14A201259CC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC65EDC821566AA097B30055D20A0E24 /* RBHttpClient */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CA0989950FE11F196352556AAD26DE7A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B01FA9D1CF3B4E4A276AD7F3D59389CE /* LICENSE */,
+				192F2D2CE0957E2A60CC62DCA55A9E48 /* RBHttpClient.podspec */,
+				C44873A994266FB59A516B3244495475 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C8C2DD4B0221D7110253E14A201259CC /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D76A01CAC4DE4772490F383945F0E11B /* Products */,
+				BA6D516B8842BFC7E1BE4F8862A76B92 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D76A01CAC4DE4772490F383945F0E11B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B4ACCCCED8737D9AF6D225B4F22B746 /* Pods_RBHttpClient_Example.framework */,
+				6A8D7FCA76F2FD6A8CED2386A38C916B /* Pods_RBHttpClient_Tests.framework */,
+				CA7885704D1263A31D0C31F051328048 /* RBHttpClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5569B0F0DD115B3F483F74AC542990F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20F5D8A8B7BBA8DD0952AC95B11FDDB /* RBHttpClient-umbrella.h in Headers */,
+				E1E3F10C22ACB5E8004892B6 /* UIViewController_RequestException.h in Headers */,
+				E1E3F10922ACB5E8004892B6 /* RBResponse.h in Headers */,
+				E1E3F10B22ACB5E8004892B6 /* RBImageCompress.h in Headers */,
+				E1E3F10722ACB5E8004892B6 /* RBRequestManager.h in Headers */,
+				E1E3F10E22ACB5E8004892B6 /* UIViewController+HTTPRequest.h in Headers */,
+				E1E3F10522ACB5E8004892B6 /* RBCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5285BBBBBEAF295109603491A763D1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40B472840AF4021D791A4C4F10F4822 /* Pods-RBHttpClient_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E129D255AB42AD4B6A3751BB534E8C89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EAC81882C43B4EEAA9FD1DCE0E6267 /* Pods-RBHttpClient_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26DEFD7B97E188919D9A01B739C8A542 /* Pods-RBHttpClient_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240DE4DD8AF10866AE367023330F0E45 /* Build configuration list for PBXNativeTarget "Pods-RBHttpClient_Tests" */;
+			buildPhases = (
+				E129D255AB42AD4B6A3751BB534E8C89 /* Headers */,
+				41D359E026BE9EA4E13B3FD9BF4B5174 /* Sources */,
+				AA820F73CDE81BBF0596A28424B28F70 /* Frameworks */,
+				C561133A9231B0858DF201A2288D9760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B45BC91F39B387FAB833544E485CBBB /* PBXTargetDependency */,
+			);
+			name = "Pods-RBHttpClient_Tests";
+			productName = "Pods-RBHttpClient_Tests";
+			productReference = 6A8D7FCA76F2FD6A8CED2386A38C916B /* Pods_RBHttpClient_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		294446812B9C003F8C1E28F5A269FB71 /* Pods-RBHttpClient_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00FDC15320A2A43FFB8A09D5AD6CE67 /* Build configuration list for PBXNativeTarget "Pods-RBHttpClient_Example" */;
+			buildPhases = (
+				B5285BBBBBEAF295109603491A763D1E /* Headers */,
+				DA17D2EBAA1074143904522C3A733172 /* Sources */,
+				0963938F415FC71BCCEBBF22ED79F33F /* Frameworks */,
+				7DDC58984413EBA71104FA097ADC371A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091CF158A88F1371D876715CCD80FBCC /* PBXTargetDependency */,
+			);
+			name = "Pods-RBHttpClient_Example";
+			productName = "Pods-RBHttpClient_Example";
+			productReference = 8B4ACCCCED8737D9AF6D225B4F22B746 /* Pods_RBHttpClient_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACD8DFFD29B13B461D1C3532300C008B /* RBHttpClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ACB1D97C40703F3DE6ADCD126288F1 /* Build configuration list for PBXNativeTarget "RBHttpClient" */;
+			buildPhases = (
+				5569B0F0DD115B3F483F74AC542990F4 /* Headers */,
+				2FEC2DDF0A355011BB273E75AE7513D7 /* Sources */,
+				E3A0F80A953F9F26FB2B1CE845363C81 /* Frameworks */,
+				26C5FFA9796BD8989AFEAD3FB8CE13F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBHttpClient;
+			productName = RBHttpClient;
+			productReference = CA7885704D1263A31D0C31F051328048 /* RBHttpClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D76A01CAC4DE4772490F383945F0E11B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				294446812B9C003F8C1E28F5A269FB71 /* Pods-RBHttpClient_Example */,
+				26DEFD7B97E188919D9A01B739C8A542 /* Pods-RBHttpClient_Tests */,
+				ACD8DFFD29B13B461D1C3532300C008B /* RBHttpClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26C5FFA9796BD8989AFEAD3FB8CE13F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DDC58984413EBA71104FA097ADC371A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C561133A9231B0858DF201A2288D9760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FEC2DDF0A355011BB273E75AE7513D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E3F10622ACB5E8004892B6 /* RBCommon.m in Sources */,
+				E1E3F10D22ACB5E8004892B6 /* RBRequestManager.m in Sources */,
+				E1E3F10F22ACB5E8004892B6 /* RBResponse.m in Sources */,
+				8A498FE4782B8F71ABA3D6CA730F9084 /* RBHttpClient-dummy.m in Sources */,
+				E1E3F10A22ACB5E8004892B6 /* UIViewController+HTTPRequest.m in Sources */,
+				E1E3F10822ACB5E8004892B6 /* RBImageCompress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D359E026BE9EA4E13B3FD9BF4B5174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F819F163900E038CC9B5E29AF0BCA6D9 /* Pods-RBHttpClient_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA17D2EBAA1074143904522C3A733172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D72EB00E38F87E638FE8711BAB394DC /* Pods-RBHttpClient_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		091CF158A88F1371D876715CCD80FBCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RBHttpClient;
+			target = ACD8DFFD29B13B461D1C3532300C008B /* RBHttpClient */;
+			targetProxy = 4043B4B71DD4F1D640C763D848D48912 /* PBXContainerItemProxy */;
+		};
+		3B45BC91F39B387FAB833544E485CBBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RBHttpClient_Example";
+			target = 294446812B9C003F8C1E28F5A269FB71 /* Pods-RBHttpClient_Example */;
+			targetProxy = 6574E077D5325D01181D3C7C71371197 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		269857E7F80CB5DF3912769CB2703607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BC480955EB874FC88B72B86B31FB94 /* Pods-RBHttpClient_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBHttpClient_Tests/Pods-RBHttpClient_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBHttpClient_Tests/Pods-RBHttpClient_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A9D0E0E0E01F56AABBBB5BD50E8F104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E201664FF09E0101A348AD974CE4F8F0 /* Pods-RBHttpClient_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBHttpClient_Tests/Pods-RBHttpClient_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBHttpClient_Tests/Pods-RBHttpClient_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		62CC18C810A1403223D41FBA25818909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB07419A12FF5E38842E66BAA955666 /* RBHttpClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RBHttpClient/RBHttpClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RBHttpClient/RBHttpClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RBHttpClient/RBHttpClient.modulemap";
+				PRODUCT_MODULE_NAME = RBHttpClient;
+				PRODUCT_NAME = RBHttpClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A649E219E1E1EFA89109843A3B7E3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4952A0E90CC60A6DBBEF350DAA0326A /* Pods-RBHttpClient_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBHttpClient_Example/Pods-RBHttpClient_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBHttpClient_Example/Pods-RBHttpClient_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C952F949C7AB1527B9612DF5042AC0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB74B97574D6DC7B94596DC82193A01E /* Pods-RBHttpClient_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RBHttpClient_Example/Pods-RBHttpClient_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RBHttpClient_Example/Pods-RBHttpClient_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D03C71668550F27C5F8BFB7B75CBF3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB07419A12FF5E38842E66BAA955666 /* RBHttpClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RBHttpClient/RBHttpClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RBHttpClient/RBHttpClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RBHttpClient/RBHttpClient.modulemap";
+				PRODUCT_MODULE_NAME = RBHttpClient;
+				PRODUCT_NAME = RBHttpClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		240DE4DD8AF10866AE367023330F0E45 /* Build configuration list for PBXNativeTarget "Pods-RBHttpClient_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9D0E0E0E01F56AABBBB5BD50E8F104 /* Debug */,
+				269857E7F80CB5DF3912769CB2703607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00FDC15320A2A43FFB8A09D5AD6CE67 /* Build configuration list for PBXNativeTarget "Pods-RBHttpClient_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A649E219E1E1EFA89109843A3B7E3D1 /* Debug */,
+				C952F949C7AB1527B9612DF5042AC0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3ACB1D97C40703F3DE6ADCD126288F1 /* Build configuration list for PBXNativeTarget "RBHttpClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CC18C810A1403223D41FBA25818909 /* Debug */,
+				D03C71668550F27C5F8BFB7B75CBF3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

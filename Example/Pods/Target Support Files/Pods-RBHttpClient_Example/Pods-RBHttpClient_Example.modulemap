@@ -1,0 +1,6 @@
+framework module Pods_RBHttpClient_Example {
+  umbrella header "Pods-RBHttpClient_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

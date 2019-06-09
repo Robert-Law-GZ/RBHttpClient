@@ -1,0 +1,16 @@
+PODS:
+  - RBHttpClient (0.1.0)
+
+DEPENDENCIES:
+  - RBHttpClient (from `../`)
+
+EXTERNAL SOURCES:
+  RBHttpClient:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RBHttpClient: fb4233b86dc7c77fd4c12f286130b52de37ed802
+
+PODFILE CHECKSUM: ae91c6afd1f301d194c17a96b8417889eae511c5
+
+COCOAPODS: 1.7.0

@@ -1,0 +1,6 @@
+framework module RBHttpClient {
+  umbrella header "RBHttpClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

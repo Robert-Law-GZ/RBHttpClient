@@ -32,6 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'RBHttpClient/Classes/**/*'
   
+  s.dependency 'AFNetworking', '~> 3.1.0'
+  s.dependency 'MBProgressHUD', '~> 1.0.0'
+  s.dependency 'MJExtension', '~> 3.0.13'
+  
   # s.resource_bundles = {
   #   'RBHttpClient' => ['RBHttpClient/Assets/*.png']
   # }
