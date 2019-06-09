@@ -21,6 +21,8 @@ FOUNDATION_EXPORT BOOL  SHOW_HTTP_LOG;
 
 +(void)configAFN;
 
++(NSString *)paramSortToString:(id)parameters;
+
 - (instancetype)initWithBaseURL:(nullable NSURL *)url;
 
 

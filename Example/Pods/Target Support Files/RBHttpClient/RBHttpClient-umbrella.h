@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "RBImageCompress.h"
+#import "RBRequestManager.h"
+#import "RBResponse.h"
+#import "UIViewController+HTTPRequest.h"
 
 FOUNDATION_EXPORT double RBHttpClientVersionNumber;
 FOUNDATION_EXPORT const unsigned char RBHttpClientVersionString[];

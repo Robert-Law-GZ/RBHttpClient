@@ -16,8 +16,4 @@
 }
 
 
--(BOOL)isExecuteSuccess{
-    return self.result;
-}
-
 @end

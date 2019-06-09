@@ -4,7 +4,8 @@
 //
 
 #import "RBRequestManager.h"
-#import "RBCommon.h"
+#import <RSAEncrypt/RSAEncrypt.h>
+#import <AFNetworking/AFNetworking.h>
 
 @implementation RBRequestManager
 
@@ -201,12 +202,14 @@ BOOL  SHOW_HTTP_LOG=YES;
     if (task!=nil) {
         NSString* urlString=[[[task currentRequest] URL] absoluteString];
         NSString *httpMethod=[[task currentRequest] HTTPMethod];
+       NSDictionary *headers=[[task currentRequest] allHTTPHeaderFields];
         
         NSString *reqLog=@"\n";
         reqLog=[reqLog stringByAppendingString:@"--------------------start-----------------------\n"];
         reqLog=[reqLog stringByAppendingString:[NSString stringWithFormat:@"URL: %@\n",urlString]];
         reqLog=[reqLog stringByAppendingString:[NSString stringWithFormat:@"Method: %@\n",httpMethod]];
         reqLog=[reqLog stringByAppendingString:[NSString stringWithFormat:@"Body: \n%@\n",params]];
+        reqLog=[reqLog stringByAppendingString:[NSString stringWithFormat:@"Header:\n%@\n",headers.description]];
         reqLog=[reqLog stringByAppendingString:@"--------------------end-------------------------"];
         
         if (SHOW_HTTP_LOG) {
@@ -214,6 +217,42 @@ BOOL  SHOW_HTTP_LOG=YES;
         }
         
     }
+}
+
+
++(NSString *)paramSortToString:(id)parameters{
+    NSMutableDictionary *params=[NSMutableDictionary dictionaryWithDictionary:parameters];
+    
+    if (parameters) {
+        [params addEntriesFromDictionary:parameters];
+    }
+    
+    NSArray *keyArray = [params.allKeys sortedArrayUsingComparator:^NSComparisonResult(NSString *obj1, NSString *obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
+    NSString *paramsString = @"";
+    
+    for (int index = 0; index < keyArray.count; index++) {
+        NSString *key = [keyArray objectAtIndex:index];
+        id value = [params objectForKey:key];
+        
+        if ([value isKindOfClass:[@(YES) class]]) {
+            if ([value boolValue] == YES) {
+                value = @1;
+            } else if ([value boolValue] == NO) {
+                value = @0;
+            }
+        }
+        
+        if ([value isKindOfClass:[NSString class]]){
+            paramsString = [paramsString stringByAppendingFormat:@"%@", value];
+        } else if ([value respondsToSelector:@selector(stringValue)]){
+            paramsString = [paramsString stringByAppendingFormat:@"%@", [value stringValue]];
+        }
+    }
+
+    return paramsString;
 }
 
 

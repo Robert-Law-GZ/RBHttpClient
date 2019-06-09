@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D49ECC3E8C505A140182469B /* Pods_RBHttpClient_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C2D052DCA7585FD8CA8FB0 /* Pods_RBHttpClient_Tests.framework */; };
+		E1E3F11422ACE379004892B6 /* UIViewController+THZRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3F11322ACE379004892B6 /* UIViewController+THZRequestClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C82A7C55953690FE049E7229 /* Pods-RBHttpClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBHttpClient_Tests.release.xcconfig"; path = "Target Support Files/Pods-RBHttpClient_Tests/Pods-RBHttpClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E1E3F11222ACE379004892B6 /* UIViewController+THZRequestClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+THZRequestClient.h"; sourceTree = "<group>"; };
+		E1E3F11322ACE379004892B6 /* UIViewController+THZRequestClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+THZRequestClient.m"; sourceTree = "<group>"; };
 		ED4A9020B8762EDFF42DF539 /* Pods_RBHttpClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBHttpClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EB7ED97F080DFF11160A76 /* Pods-RBHttpClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBHttpClient_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RBHttpClient_Tests/Pods-RBHttpClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				E1E3F11222ACE379004892B6 /* UIViewController+THZRequestClient.h */,
+				E1E3F11322ACE379004892B6 /* UIViewController+THZRequestClient.m */,
 			);
 			name = "Example for RBHttpClient";
 			path = RBHttpClient;
@@ -247,6 +252,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Robert-Law-GZ";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -302,11 +310,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RBHttpClient_Example/Pods-RBHttpClient_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/RBHttpClient/RBHttpClient.framework",
+				"${BUILT_PRODUCTS_DIR}/RSAEncrypt/RSAEncrypt.framework",
+				"${BUILT_PRODUCTS_DIR}/RSAUtil/RSAUtil.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RBHttpClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSAEncrypt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSAUtil.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E3F11422ACE379004892B6 /* UIViewController+THZRequestClient.m in Sources */,
 				6003F59E195388D20070C39A /* RBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -494,12 +513,15 @@
 			baseConfigurationReference = 418134B734BB1B2A720C4FC4 /* Pods-RBHttpClient_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBHttpClient/RBHttpClient-Prefix.pch";
 				INFOPLIST_FILE = "RBHttpClient/RBHttpClient-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -509,12 +531,15 @@
 			baseConfigurationReference = 1127D46666D34E832CBE84CE /* Pods-RBHttpClient_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBHttpClient/RBHttpClient-Prefix.pch";
 				INFOPLIST_FILE = "RBHttpClient/RBHttpClient-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

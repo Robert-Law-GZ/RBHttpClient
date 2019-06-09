@@ -18,5 +18,22 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RBHttpClient/Classes/**/*"
+  "source_files": "RBHttpClient/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ],
+    "MBProgressHUD": [
+      "~> 1.0.0"
+    ],
+    "MJExtension": [
+      "~> 3.0.13"
+    ],
+    "RSAEncrypt": [
+      "~> 1.1.0"
+    ],
+    "RSAUtil": [
+      "~> 1.0"
+    ]
+  }
 }

@@ -1,15 +1,52 @@
 PODS:
-  - RBHttpClient (0.1.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.17)
+  - RBHttpClient (0.1.0):
+    - AFNetworking (~> 3.1.0)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 3.0.13)
+    - RSAEncrypt (~> 1.1.0)
+    - RSAUtil (~> 1.0)
+  - RSAEncrypt (1.1.0)
+  - RSAUtil (1.0)
 
 DEPENDENCIES:
   - RBHttpClient (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - MBProgressHUD
+    - MJExtension
+    - RSAEncrypt
+    - RSAUtil
 
 EXTERNAL SOURCES:
   RBHttpClient:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RBHttpClient: fb4233b86dc7c77fd4c12f286130b52de37ed802
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  RBHttpClient: 4a1b58d6ae2cd2e805bf302d97e6f91034f78ede
+  RSAEncrypt: 06cb5e81ca7063f2f537d61f8e247a43d18cbab4
+  RSAUtil: 9ee452c121696122df03529323da805ddc815156
 
 PODFILE CHECKSUM: ae91c6afd1f301d194c17a96b8417889eae511c5
 
