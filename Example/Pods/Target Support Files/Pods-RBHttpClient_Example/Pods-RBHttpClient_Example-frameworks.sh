@@ -165,7 +165,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RBHttpClient/RBHttpClient.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RSAEncrypt/RSAEncrypt.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RSAUtil/RSAUtil.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -173,7 +172,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RBHttpClient/RBHttpClient.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RSAEncrypt/RSAEncrypt.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RSAUtil/RSAUtil.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

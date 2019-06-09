@@ -4,7 +4,6 @@
 //
 
 #import "RBRequestManager.h"
-#import <RSAEncrypt/RSAEncrypt.h>
 #import <AFNetworking/AFNetworking.h>
 
 @implementation RBRequestManager

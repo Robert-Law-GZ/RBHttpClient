@@ -314,7 +314,6 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/RBHttpClient/RBHttpClient.framework",
-				"${BUILT_PRODUCTS_DIR}/RSAEncrypt/RSAEncrypt.framework",
 				"${BUILT_PRODUCTS_DIR}/RSAUtil/RSAUtil.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -323,7 +322,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RBHttpClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSAEncrypt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSAUtil.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

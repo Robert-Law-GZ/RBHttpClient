@@ -29,9 +29,6 @@
     "MJExtension": [
       "~> 3.0.13"
     ],
-    "RSAEncrypt": [
-      "~> 1.1.0"
-    ],
     "RSAUtil": [
       "~> 1.0"
     ]
