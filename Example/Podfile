@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'RBHttpClient_Example' do
+  pod 'RBHttpClient', :path => '../'
+
+  target 'RBHttpClient_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
